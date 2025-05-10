@@ -1,4 +1,5 @@
 import 'package:buedelivery/Q4/question4.dart';
+import 'package:buedelivery/Q4/question5.dart';
 import 'package:buedelivery/Q7/model/article.dart';
 import 'package:buedelivery/Q7/services/article_service.dart';
 // import 'package:buedelivery/Q4/question5.dart';
@@ -9,11 +10,14 @@ import 'package:flutter/material.dart';
 
 // void main() {
 // for question 4
-// runApp(const MaterialApp(home: CustomProgressBarDemo()));
+// runApp(const MaterialApp(
+//   debugShowCheckedModeBanner: false,
+//   home: CustomProgressBarDemo()));
 // for question 5
 // runApp(const MaterialApp(
 //   debugShowCheckedModeBanner: false,
 //   home: HomePage()));
+
 // }
 
 // import 'package:flutter/material.dart';
@@ -30,6 +34,7 @@ import 'package:flutter/material.dart';
 //   @override
 //   Widget build(BuildContext context) {
 //     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
 //       home: BlocProvider(
 //         create: (_) => TaskBloc(repository)..add(LoadTasks()),
 //         child: const HomePage(),
@@ -65,7 +70,7 @@ class ArticlePage extends StatefulWidget {
 }
 
 class _ArticlePageState extends State<ArticlePage> {
-  
+
   final ArticleService _service = ArticleService();
   late Future<List<Article>> _futureArticles;
 
